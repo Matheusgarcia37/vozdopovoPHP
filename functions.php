@@ -47,7 +47,7 @@ function template_header($title)
         <nav class="navtop">
             <div>
                 <h1>Voz do Povo</h1>
-                <a href="index.php"><i class="fas fa-ticket-alt"></i>tickets</a>
+                <a href="/vozdopovoPHP/loginPrefeitura.php"><i class="fas fa-sign-in-alt"></i>Acesso Restrito</a>
             </div>
         </nav>
     EOT;
@@ -116,5 +116,10 @@ function template_footer()
     echo <<<EOT
     </body>
 </html>
+    <footer class="footer">
+
+    <p>© 2021 - Voz do Povo - <a href="./loginAdmin.php">&nbsp;Todos os direitos resevados.</a>
+    </p>
+    </footer>
 EOT;
 }

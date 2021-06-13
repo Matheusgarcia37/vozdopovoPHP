@@ -12,7 +12,7 @@ body {
   margin: 0;
 }
 .navtop {
-  background-color: #3f69a8;
+  background-color: #16adb7;
   height: 60px;
   width: 100%;
   border: 0;
@@ -33,13 +33,13 @@ body {
   font-size: 24px;
   padding: 0;
   margin: 0;
-  color: #ecf0f6;
+  color: white;
   font-weight: normal;
 }
 .navtop div a {
   padding: 0 20px;
   text-decoration: none;
-  color: #c5d2e5;
+  color: white;
   font-weight: bold;
 }
 .navtop div a i {
@@ -54,24 +54,71 @@ body {
 }
 .content h2 {
   margin: 0;
+  margin-top: 8rem;
   padding: 25px 0;
-  font-size: 22px;
-  border-bottom: 1px solid #ebebeb;
+  font-size: 50px;
   color: #666666;
+  max-width: 500px;
+}
+.content .lottie lottie-player {
+  position: absolute;
+  right: 15%;
+  margin-top: 3rem;
 }
 .btns {
   display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
 }
-.btns .btn {
-  display: inline-block;
+.btns .btn-create {
+  display: flex;
   text-decoration: none;
   background-color: #38b673;
   font-weight: bold;
-  font-size: 14px;
-  border-radius: 5px;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 400px;
+  height: 60px;
+  border-radius: 20px;
   color: #ffffff;
   padding: 10px 15px;
   margin: 15px 10px 15px 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.content .button-buscar {
+  display: flex;
+  justify-content: space-between;
+}
+.content .button-buscar .btn-buscar {
+  display: flex;
+  text-decoration: none;
+  background-color: #38b673;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 200px;
+  height: 50px;
+  border-radius: 15px;
+  border: none;
+  color: #ffffff;
+  padding: 10px 15px;
+  margin: 40px 10px 0px 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: -40px;
+}
+.content .button-buscar .input-buscar {
+  width: 300px;
+  height: 50px;
+  justify-content: space-between;
+  padding: 10px 15px;
+  margin: 40px 10px 0px 0;
+  border-radius: 20px;
+  border: 1px solid grey;
+  margin-left: auto;
 }
 .btns .btn:hover {
   background-color: #32a367;
@@ -215,4 +262,25 @@ body {
 .create form input[type="submit"]:hover,
 .view form input[type="submit"]:hover {
   background-color: #32a367;
+}
+.footer {
+  position: absolute;
+  height: 2.5rem;
+  width: 100%;
+  bottom: 0;
+  background-color: #16adb7;
+}
+.footer p {
+  display: flex;
+  white-space: nowrap;
+
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+.footer p a {
+  text-decoration: none;
+  color: inherit;
+  cursor: auto;
 }
