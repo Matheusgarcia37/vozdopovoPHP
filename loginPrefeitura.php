@@ -33,19 +33,36 @@ if (isset($_POST['btn-entrar'])) {
 <?= template_header('Login Prefeitura') ?>
 
 <body>
-    <h1>Login Prefeitura</h1>
-    <?php
-    if (!empty($erros)) :
-        foreach ($erros as $erro) :
-            echo $erro;
-        endforeach;
-    endif;
-    ?>
-    <hr>
-    <form action="<?php echo $_SERVER['PHP_SELF']; ?> " method="POST">
-        Login: <input type="text" name="login"><br>
-        Senha: <input type="password" name="senha"><br>
-        <button type="submit" name="btn-entrar">Entrar</button>
-    </form>
+    <div class="login">
+        <div class="contentLogin">
+            <div class="lottie-esquerda">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_yupefrh2.json" background="transparent" speed="1" style="width: 950px; height: 950px;" loop autoplay></lottie-player>
+            </div>
+            <div class="login-direita">
+                <h2>Voz do Povo</h2>
+                <h1>Ola, seja bem vindo(a)!</h1>
+
+                <form action="<?php echo $_SERVER['PHP_SELF']; ?> " method="POST">
+                    <label for="login"></label> <input placeholder="Login" type="text" name="login"><br>
+                    <div class="senha"><label for="senha"></label> <input placeholder="Senha" type="password" name="senha"><br></div>
+
+                    <button class="btn-login" type="submit" name="btn-entrar">Entrar</button>
+                </form>
+                <div class="erros">
+                    <?php
+                    if (!empty($erros)) :
+                        foreach ($erros as $erro) :
+                            echo $erro;
+                        endforeach;
+                    endif;
+                    ?>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
 </body>
 <?= template_footer() ?>

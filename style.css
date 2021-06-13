@@ -8,7 +8,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 body {
-  background-color: #ffffff;
+  background-color: #fafafa;
   margin: 0;
 }
 .navtop {
@@ -20,12 +20,13 @@ body {
 .navtop div {
   display: flex;
   margin: 0 auto;
-  width: 1000px;
+  width: 90%;
   height: 100%;
 }
 .navtop div h1,
 .navtop div a {
-  display: inline-flex;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 .navtop div h1 {
@@ -51,6 +52,7 @@ body {
 .content {
   width: 1000px;
   margin: 0 auto;
+  height: 100%;
 }
 .content h2 {
   margin: 0;
@@ -264,11 +266,11 @@ body {
   background-color: #32a367;
 }
 .footer {
-  position: absolute;
   height: 2.5rem;
   width: 100%;
   bottom: 0;
   background-color: #16adb7;
+  position: absolute;
 }
 .footer p {
   display: flex;
@@ -283,4 +285,127 @@ body {
   text-decoration: none;
   color: inherit;
   cursor: auto;
+}
+
+/* Estilos da pagina login Prefeitura */
+.contentLogin {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  height: 80vh;
+  margin: 20px 40px;
+  border-radius: 10px;
+  width: 95%;
+  box-shadow: 10px 10px 20px #656565;
+  opacity: 1;
+}
+.contentLogin .lottie-esquerda {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid grey;
+  height: 100%;
+}
+.contentLogin .login-direita {
+  display: flex;
+  width: 50%;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+  margin-left: 3rem;
+  margin-top: -5rem;
+}
+.contentLogin .login-direita form {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+}
+.contentLogin .login-direita label {
+  position: absolute;
+  color: #848484;
+  position: absolute;
+  margin-left: 1px;
+  font-size: 17px;
+  cursor: text;
+
+  font-family: "Roboto", sans-serif;
+}
+.contentLogin .login-direita input {
+  width: 70%;
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+  border-bottom: 1px solid #c3c3c3;
+  margin-bottom: 3rem;
+  cursor: text;
+  background-color: #fafafa;
+}
+.contentLogin .login-direita .senha input {
+  background-color: #fafafa;
+  width: 70%;
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+  border-bottom: 1px solid #c3c3c3;
+  margin-bottom: 3rem;
+  cursor: text;
+  z-index: 100;
+}
+.contentLogin .login-direita .senha label {
+  position: absolute;
+  color: #848484;
+  position: absolute;
+  margin-left: 1px;
+  font-size: 17px;
+  cursor: text;
+
+  font-family: "Roboto", sans-serif;
+}
+.contentLogin .login-direita .senha {
+  width: 100%;
+}
+.contentLogin .login-direita .erros {
+  margin-top: 3%;
+}
+.contentLogin .login-direita h2 {
+  margin-bottom: 3rem;
+  font-size: 40px;
+  color: #898989;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 40%;
+}
+.contentLogin .login-direita h1 {
+  margin-bottom: 3rem;
+  font-size: 25px;
+  color: #898989;
+}
+.contentLogin .login-direita .btn-login {
+  margin-bottom: 3rem;
+  font-size: 23px;
+  background-color: #38b673;
+  color: white;
+  width: 200px;
+  border-radius: 20px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  cursor: pointer;
+}
+.contentLogin .login-direita .btn-login:hover {
+  background-color: #32a367;
+  transition: all 0.2s;
 }

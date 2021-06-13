@@ -2,7 +2,6 @@
 include './functions.php';
 // Connect to MySQL using the below function
 $pdo = pdo_connect_mysql();
-header('Refresh:5');
 // MySQL query that retrieves  all the tickets from the databse
 $stmt = $pdo->prepare('SELECT * FROM tickets ORDER BY created DESC');
 $stmt->execute();
